@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tic Tac Toe</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="scripts.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" type="module"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css">
 </head>
 <body>
-  <div id="message">Welcome to Tic Tac Toe<br>
-    <button onclick="gameLogic.start()">Start Game</button>
-  </div>
-  <div id="game"></div>
+  <main id="main">
+    <div id="message">Welcome to Tic Tac Toe<br>
+      <button onclick="newGame()">Start Game</button>
+    </div>
+  </main>
 </body>
 </html>
