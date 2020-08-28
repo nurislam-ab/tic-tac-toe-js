@@ -1,14 +1,6 @@
 import GameBoard from './board.js';
 import GameLogic from './game.js';
 
-const newGame = () => {
+window.newGame = function () {
   GameLogic.start()
 }
-
-function render() {
-  GameBoard.displayBoard();
-}
-
-window.onload = () => {
-  render();
-};
