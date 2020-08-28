@@ -3,7 +3,7 @@ div#gameboard {
   border: 1px solid black;
   justify-content: space-evenly;
   flex-direction: row;
-  width: 60%;
+  width: 100%;
   flex-wrap: wrap;
   text-align: center;
 }
@@ -11,4 +11,36 @@ div#gameboard {
 div#gameboard > div {
   flex: 1 0 calc((100% / 3) - 10px);
   border: 1px solid black;
+  width: 100%;
+  height: 20px;
+}
+
+h4 {
+  text-align: center;
+}
+
+.information {
+  animation: border-animation 5s;
+}
+
+.winner {
+  animation: border-winning 10s;
+}
+
+@keyframes border-animation {
+  0% {
+    border: solid red 1px;
+  }
+  100% {
+    border: solid white 1px;
+  }
+}
+
+@keyframes border-winning {
+  0% {
+    border: solid green 3px;
+  }
+  100% {
+    border: solid white 1px;
+  }
 }
