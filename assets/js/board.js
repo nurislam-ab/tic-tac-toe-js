@@ -6,12 +6,13 @@ const GameBoard = (() => {
     let mainElement = document.getElementById('game-board');
     let container = document.createElement('div');
     container.id = "player-board";
-    container.id = "gameboard";
-    mainElement.append(container);
+    container.classList.toggle('board-wrapper')
+    
 
     for(let i = 0; i <= 8; i++){
       let cellWrapper = document.createElement('div');
       cellWrapper.id = `${i}`;
+      cellWrapper.classList.toggle('token-wrapper')
       container.appendChild(cellWrapper);
       cellWrapper.onclick = function(){ GameLogic.playerInput(i) };
       container.append(cellWrapper);
