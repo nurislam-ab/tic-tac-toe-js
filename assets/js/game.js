@@ -78,6 +78,13 @@ const GameLogic = (() => {
     }
   };
 
+  const disableCells = () => {
+    for(let i = 0; i <= 8; i++){
+      let cell = document.getElementById(`${i}`);
+      cell.style.pointerEvents = 'none';
+    }
+  }
+
   const switchPlayer = () => {
     currentPlayer = currentPlayer === player1 ? player2 : player1;
   }
@@ -86,10 +93,12 @@ const GameLogic = (() => {
     if (winner) {
       message.innerHTML = `We have a winner! Congratulations ${currentPlayer.name}.`;
       document.getElementById('instructions').classList.toggle('winner');
+      disableCells();
       return true;
     } else if (movesArray.every ((el) => {el !== null})) {
       finalMessage.innerHTML = `We have a tie! Start a new game.`;
       document.getElementById('instructions').classList.toggle('information');
+      disableCells();
       return true;
     } else {
       return false;
