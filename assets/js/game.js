@@ -131,10 +131,17 @@ const GameLogic = (() => {
     }
   }
 
+  const toggleStartElements = () => {
+    let startScreen = document.getElementById('start-screen');
+    let newGameBtn = document.getElementById('new-game-btn');
+    startScreen.classList.toggle('float-game-title');
+    newGameBtn.classList.toggle('float-new-game-btn');
+  }
+
   return {
     start,
     playerInput,
-    playerInput
+    toggleStartElements
   }
 })();
 
