@@ -53,8 +53,8 @@ const GameLogic = (() => {
   };
 
   const beginTurn = () => {
-    message.innerHTML = `Hello player ${currentPlayer.name}, this is your turn.<br>`;
-    message.innerHTML += 'Please, click on the cell you want to play.';
+    message.innerHTML = `Hello ${currentPlayer.name}, this is your turn.<br>`;
+    message.innerHTML += '<span>Please, click on the cell you want to play.</span>';
     document.getElementById('instructions').classList.toggle('information');
     document.getElementById('instructions').classList.toggle('information');
   }
@@ -102,12 +102,12 @@ const GameLogic = (() => {
   };
 
   const playerInput = (i) => {
-    let currentCell = document.getElementById(i);
-    
+    let currentCell = document.getElementById(`${i}`);
     if (currentCell.innerHTML === '') {
       currentCell.innerHTML =  currentPlayer.token;
       currentCell.classList.toggle('selected-cell');
       movesArray[i] = currentPlayer.token
+      movesArray[i] = currentPlayer.token;
       evaluateWinner();
     } else {
       alert('This option has been taken. Please select an empty option.');
@@ -120,6 +120,7 @@ const GameLogic = (() => {
 
   return {
     start,
+    playerInput,
     playerInput
   }
 })();
