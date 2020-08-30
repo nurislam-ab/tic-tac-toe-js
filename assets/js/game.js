@@ -106,7 +106,7 @@ const GameLogic = (() => {
     if (currentCell.innerHTML === '') {
       currentCell.innerHTML =  currentPlayer.token;
       currentCell.classList.toggle('selected-cell');
-      movesArray[i] = currentPlayer.token
+      togglePlayerClass(player1, currentCell);
       movesArray[i] = currentPlayer.token;
       evaluateWinner();
     } else {
@@ -114,8 +114,12 @@ const GameLogic = (() => {
     }
   }
 
-      alert('This option has been taken. Please select an empty option.')
-  }
+  const togglePlayerClass = (player, element) => {
+    if (currentPlayer === player) {
+      element.classList.toggle('player-1-cell');
+    } else {
+      element.classList.toggle('player-2-cell');
+    }
   }
 
   return {
