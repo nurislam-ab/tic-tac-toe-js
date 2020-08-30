@@ -3,12 +3,12 @@ import GameLogic from './game.js';
 const GameBoard = (() => {
   
   const displayBoard = () => {
-    
-    let mainElement = document.getElementById('main');
+    let mainElement = document.getElementById('game-board');
     let container = document.createElement('div');
+    container.id = "player-board";
     container.id = "gameboard";
     mainElement.append(container);
-    
+
     for(let i = 0; i <= 8; i++){
       let cellWrapper = document.createElement('div');
       cellWrapper.id = `${i}`;
@@ -20,7 +20,7 @@ const GameBoard = (() => {
   }
 
   const deleteBoard = (() => {
-    let board = document.getElementById('gameboard');
+    let board = document.getElementById('player-board');
     if (board != null) {
       board.parentNode.removeChild(board);
     } 
