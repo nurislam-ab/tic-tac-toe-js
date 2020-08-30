@@ -23,7 +23,7 @@ const GameLogic = (() => {
       playerSymbol = prompt(`Please select a valid option. Choose from: ${tokens.join(' ')}.`, '');
     }
     
-    playerSymbol !=null ? alert(`Cool! ${playerSymbol}! Your token will be ${playerSymbol}`): null;   
+    playerSymbol != null ? alert(`Cool! ${playerSymbol}! Your token will be ${playerSymbol}`): null;   
     let index = tokens.indexOf(playerSymbol);
     tokens.splice(index, 1);
 
@@ -32,6 +32,8 @@ const GameLogic = (() => {
   }
   
   const reset = () => {
+    GameBoard.deleteBoard();
+    GameBoard.deletePlayers();
     player1 = null;
     player2 = null;
     tokens = ['x', 'o', '#', '$', '@', '!'];
@@ -41,14 +43,13 @@ const GameLogic = (() => {
   }
   
   const start = () => {
-    GameBoard.deleteBoard();
     reset();
-    GameBoard.displayBoard();
     player1 = _getPlayerVariables(tokens);
     player2 = _getPlayerVariables(tokens);
     currentPlayer = player1;
     update(player1, player2);
-    
+    GameBoard.displayBoard();
+    GameBoard.displayPlayers(player1, player2);
   };
 
   const beginTurn = () => {
@@ -64,12 +65,14 @@ const GameLogic = (() => {
       doWeHaveAWinner = pattern.every((index) => 
         movesArray[index] === currentPlayer.token
       );
+
       if (doWeHaveAWinner) {
         winner = currentPlayer;
+        console.log(`${currentPlayer.name}`);
       }
-    })
+    });
+
     if (!endGame(winner)) {
-      console.log('Are you going here after winning?')
       switchPlayer();
       beginTurn();
     }
@@ -80,7 +83,6 @@ const GameLogic = (() => {
   }
 
   const endGame = (winner) => {
-
     if (winner) {
       message.innerHTML = `We have a winner! Congratulations ${currentPlayer.name}.`;
       document.getElementById('instructions').classList.toggle('winner');
@@ -108,8 +110,12 @@ const GameLogic = (() => {
       movesArray[i] = currentPlayer.token
       evaluateWinner();
     } else {
-      alert('This option has been taken. Please select an empty option.')
+      alert('This option has been taken. Please select an empty option.');
     }
+  }
+
+      alert('This option has been taken. Please select an empty option.')
+  }
   }
 
   return {
