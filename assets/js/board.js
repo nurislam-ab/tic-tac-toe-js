@@ -13,7 +13,7 @@ const GameBoard = (() => {
       let cellWrapper = document.createElement('div');
       cellWrapper.id = `${i}`;
       cellWrapper.classList.toggle('token-wrapper')
-      container.appendChild(cellWrapper);
+      cellWrapper.setAttribute('data-text', '+');
       cellWrapper.onclick = function(){ GameLogic.playerInput(i) };
       container.append(cellWrapper);
     }
