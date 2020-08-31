@@ -134,8 +134,8 @@ const GameLogic = (() => {
   const toggleStartElements = () => {
     let startScreen = document.getElementById('start-screen');
     let newGameBtn = document.getElementById('new-game-btn');
-    startScreen.classList.toggle('float-game-title');
-    newGameBtn.classList.toggle('float-new-game-btn');
+    startScreen.className += ' float-game-title';
+    newGameBtn.className += ' float-new-game-btn';
   }
 
   return {
