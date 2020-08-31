@@ -108,6 +108,12 @@ main {
   color: white;
   cursor: pointer;
   margin-top: 35px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.buttons-container .new-game:hover {
+  background-color: #3B299B;
 }
 
 .messages-container {
@@ -247,12 +253,19 @@ main {
 .game-container div.board-wrapper .token-wrapper::before {
   content: '+';
   color: rgba(41, 128, 185, 0.35);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .game-container div.board-wrapper .token-wrapper:hover {
   opacity: .85;
   cursor: pointer;
   background-color: #2980b9;
+}
+
+.game-container div.board-wrapper .token-wrapper:hover:before {
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
 }
 
 .game-container div.board-wrapper .player-1-cell.token-wrapper::before,
