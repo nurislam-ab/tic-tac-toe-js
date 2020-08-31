@@ -8,7 +8,7 @@ const GameLogic = (() => {
   let winner;
   let tokens = ['x', 'o', '#', '$', '@', '!'];
   let winningPatterns = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
-  let movesArray = [,,,,,,,,];
+  let movesArray = ['','','','','','','','',''];
   let message = document.querySelector("#instructions");
 
   const _getPlayerVariables = (tokens) => {
@@ -38,7 +38,7 @@ const GameLogic = (() => {
     player2 = null;
     tokens = ['x', 'o', '#', '$', '@', '!'];
     winner = null;
-    movesArray = [,,,,,,,,];
+    movesArray = ['','','','','','','','',''];
     currentPlayer = null;
   }
   
@@ -95,8 +95,8 @@ const GameLogic = (() => {
       document.getElementById('instructions').classList.toggle('winner');
       disableCells();
       return true;
-    } else if (movesArray.every ((el) => {el !== null})) {
-      finalMessage.innerHTML = `We have a tie! Start a new game.`;
+    } else if (movesArray.every (el => el !== '')) {
+      message.innerHTML = `We have a tie! Start a new game.`;
       document.getElementById('instructions').classList.toggle('information');
       disableCells();
       return true;
