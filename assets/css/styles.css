@@ -30,123 +30,49 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: space-evenly;
-      align-content: space-evenly;
+  align-content: space-evenly;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   overflow: hidden;
-}
-
-.start-screen {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.start-screen div.game-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
-}
-
-.start-screen div.game-title .row {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.start-screen div.game-title .row span {
-  font-family: 'Retro','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: 900;
-  padding: 4px;
-  font-size: 5.5rem;
-  color: #FFD033;
-  text-shadow: 0 1px #2A1C52, -1px 0 #3B299B, -1px 2px #2A1C52, -2px 1px #3B299B, -2px 3px #2A1C52, -3px 2px #3B299B, -3px 4px #2A1C52, -4px 3px #3B299B, -4px 5px #2A1C52, -5px 4px #3B299B, -5px 6px #2A1C52, -6px 5px #3B299B, -6px 7px #2A1C52, -7px 6px #3B299B, -7px 8px #2A1C52, -8px 7px #3B299B;
-}
-
-.start-screen div.game-title .row-1 span:nth-child(even), .start-screen div.game-title .row-3 span:nth-child(even) {
-  color: #EB1750;
-}
-
-.start-screen div.game-title .row-2 span:nth-child(odd) {
-  color: #EB1750;
-}
-
-.buttons-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.buttons-container .new-game {
-  padding: 18px 50px;
-  font-size: 1.2em;
-  border-radius: 35px;
-  border: none;
-  background: #EB1750;
-  color: white;
-  cursor: pointer;
-  margin-top: 35px;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-
-.buttons-container .new-game:hover {
-  background-color: #3B299B;
 }
 
 .messages-container {
   margin: 25px 0;
-  font-family: 'Sniglet-ExtraBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Sniglet-ExtraBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .messages-container h3 {
   text-align: center;
   font-size: 1.5em;
   margin-top: 50px;
-  color: #FCAA15;
+  color: #fcaa15;
 }
 
 .messages-container h3 span {
   color: #bdc3c7;
-  font-size: .75em;
+  font-size: 0.75em;
 }
 
 .messages-container .information {
   -webkit-animation: border-animation 5s;
-          animation: border-animation 5s;
+  animation: border-animation 5s;
 }
 
 .messages-container .winner {
   -webkit-animation: border-winning 10s;
-          animation: border-winning 10s;
+  animation: border-winning 10s;
 }
 
 @-webkit-keyframes border-animation {
   0% {
     border: solid red 1px;
   }
+
   100% {
     border: solid white 1px;
   }
@@ -156,6 +82,7 @@ main {
   0% {
     border: solid red 1px;
   }
+
   100% {
     border: solid white 1px;
   }
@@ -165,6 +92,7 @@ main {
   0% {
     border: solid green 3px;
   }
+
   100% {
     border: solid white 1px;
   }
@@ -174,9 +102,14 @@ main {
   0% {
     border: solid green 3px;
   }
+
   100% {
     border: solid white 1px;
   }
+}
+
+.float-game-title > div > div > span {
+  font-size: 1.8rem !important;
 }
 
 .game-container {
@@ -185,18 +118,18 @@ main {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0 25px;
   margin-bottom: 80px;
 }
@@ -208,17 +141,17 @@ main {
   border-radius: 35px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   text-align: center;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
+  -ms-flex-order: 3;
+  order: 3;
   padding: 25px;
   margin: 0 25px;
   width: 50%;
@@ -226,46 +159,46 @@ main {
 
 .game-container div.board-wrapper .token-wrapper {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 calc((100% / 3) - 10px);
-          flex: 1 0 calc((100% / 3) - 10px);
+  -ms-flex: 1 0 calc((100% / 3) - 10px);
+  flex: 1 0 calc((100% / 3) - 10px);
   height: 22.5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-family: 'RammettoOne-Regular', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 5rem;
   background-color: #111491;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2315229e'/%3E%3Cstop offset='1' stop-color='%2315229e' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2315229e'/%3E%3Cstop offset='1' stop-color='%2315229e' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231a32aa'/%3E%3Cstop offset='1' stop-color='%231a32aa' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23111491'/%3E%3Cstop offset='1' stop-color='%23111491' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231a32aa'/%3E%3Cstop offset='1' stop-color='%231a32aa' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231a32aa'/%3E%3Cstop offset='1' stop-color='%231a32aa' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: cover;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .game-container div.board-wrapper .token-wrapper::before {
   content: '+';
   color: rgba(41, 128, 185, 0.35);
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .game-container div.board-wrapper .token-wrapper:hover {
-  opacity: .85;
+  opacity: 0.85;
   cursor: pointer;
   background-color: #2980b9;
 }
 
-.game-container div.board-wrapper .token-wrapper:hover:before {
+.game-container div.board-wrapper .token-wrapper:hover::before {
   -webkit-transform: scale(1.8);
-          transform: scale(1.8);
+  transform: scale(1.8);
 }
 
 .game-container div.board-wrapper .player-1-cell.token-wrapper::before,
@@ -316,40 +249,40 @@ main {
 
 .game-container #player-1 {
   -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  -ms-flex-order: 1;
+  order: 1;
 }
 
 .game-container #player-2 {
   -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
+  -ms-flex-order: 3;
+  order: 3;
 }
 
 .game-container .player-card {
   -webkit-box-flex: 0.5;
-      -ms-flex-positive: 0.5;
-          flex-grow: 0.5;
+  -ms-flex-positive: 0.5;
+  flex-grow: 0.5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   margin: 25px;
-  padding: 40px 0px;
+  padding: 40px 0;
   width: 10vw;
   border-radius: 50px;
-  font-family: 'Sniglet-ExtraBold','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Sniglet-ExtraBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: #111491;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231317a6'/%3E%3Cstop offset='1' stop-color='%231317a6' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230f127e'/%3E%3Cstop offset='1' stop-color='%230f127e' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23121492'/%3E%3Cstop offset='1' stop-color='%23121492' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23111491'/%3E%3Cstop offset='1' stop-color='%23111491' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23161aba'/%3E%3Cstop offset='1' stop-color='%23161aba' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230d0f6b'/%3E%3Cstop offset='1' stop-color='%230d0f6b' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
   background-attachment: fixed;
@@ -363,13 +296,88 @@ main {
 
 .game-container .player-card h3 {
   text-transform: uppercase;
-  color: #FCAA15;
+  color: #fcaa15;
   font-size: 1.5rem;
   margin: 0;
 }
 
 .game-container .player-card span {
   font-size: 3rem;
+}
+
+.start-screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.start-screen div.game-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.start-screen div.game-title .row {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.start-screen div.game-title .row span {
+  font-family: 'Retro', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
+  padding: 4px;
+  font-size: 5.5rem;
+  color: #ffd033;
+  text-shadow: 0 1px #2a1c52, -1px 0 #3b299b, -1px 2px #2a1c52, -2px 1px #3b299b, -2px 3px #2a1c52, -3px 2px #3b299b, -3px 4px #2a1c52, -4px 3px #3b299b, -4px 5px #2a1c52, -5px 4px #3b299b, -5px 6px #2a1c52, -6px 5px #3b299b, -6px 7px #2a1c52, -7px 6px #3b299b, -7px 8px #2a1c52, -8px 7px #3b299b;
+}
+
+.start-screen div.game-title .row-1 span:nth-child(even),
+.start-screen div.game-title .row-3 span:nth-child(even) {
+  color: #eb1750;
+}
+
+.start-screen div.game-title .row-2 span:nth-child(odd) {
+  color: #eb1750;
+}
+
+.buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.buttons-container .new-game {
+  padding: 18px 50px;
+  font-size: 1.2em;
+  border-radius: 35px;
+  border: none;
+  background: #eb1750;
+  color: white;
+  cursor: pointer;
+  margin-top: 35px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.buttons-container .new-game:hover {
+  background-color: #3b299b;
 }
 
 .hidden {
@@ -379,11 +387,7 @@ main {
 .float-game-title {
   left: 10px;
   position: absolute;
-  top: 0px;
-}
-
-.float-game-title > div > div > span {
-  font-size: 1.8rem !important;
+  top: 0;
 }
 
 .float-new-game-btn {
@@ -391,4 +395,3 @@ main {
   right: 10px;
   top: -20px;
 }
-/*# sourceMappingURL=styles.css.map */
