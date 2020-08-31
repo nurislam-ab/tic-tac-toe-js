@@ -1,7 +1,7 @@
-import GameBoard from './board.js';
+/* eslint-disable import/extensions */
 import GameLogic from './game.js';
 
-window.newGame = function () {
+window.newGame = () => {
   GameLogic.start();
   GameLogic.toggleStartElements();
-}
+};
