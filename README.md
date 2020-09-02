@@ -1,5 +1,9 @@
 # Tic tac toe - A Microverse educational project
 
+Building a Tic Tac Toe game using JavaScript to build the entire game manipulating DOM elements using JS modules.
+
+![screenshot](./assets/images/game_screenshot.png)
+
 ## Built With
 
 -   HTML5;
@@ -8,13 +12,13 @@
 
 ## Live Demo
 
-[Live Demo]()
+[Live Demo](https://raw.githack.com/nurislam-ab/tic-tac-toe-js/feature-develop-game/index.html)
 
 ## Getting Started
 
 - Fork the repository and create a local one on your computer;
 - Move to the repository inside the command line using `cd` and the path to the file;
-- open `index.html` file.
+- open `index.html` file on your browser.
 
 ## Authors
 
