@@ -1,5 +1,9 @@
 # Tic tac toe - A Microverse educational project
 
+Building a Tic Tac Toe game using JavaScript to build the entire game manipulating DOM elements using JS modules.
+
+![screenshot](./assets/images/game_screenshot.png)
+
 ## Built With
 
 -   HTML5;
