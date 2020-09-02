@@ -1,15 +1,15 @@
 @font-face {
-  font-family: 'Retro';
+  font-family: "Retro";
   src: url(../fonts/Retro.ttf);
 }
 
 @font-face {
-  font-family: 'Sniglet-ExtraBold';
+  font-family: "Sniglet-ExtraBold";
   src: url(../fonts/Sniglet-ExtraBold.ttf);
 }
 
 @font-face {
-  font-family: 'RammettoOne-Regular';
+  font-family: "RammettoOne-Regular";
   src: url(../fonts/RammettoOne-Regular.ttf);
 }
 
@@ -44,7 +44,7 @@ main {
 
 .messages-container {
   margin: 25px 0;
-  font-family: 'Sniglet-ExtraBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Sniglet-ExtraBold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .messages-container h3 {
@@ -170,7 +170,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: 'RammettoOne-Regular', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "RammettoOne-Regular", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 5rem;
   background-color: #111491;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2315229e'/%3E%3Cstop offset='1' stop-color='%2315229e' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2315229e'/%3E%3Cstop offset='1' stop-color='%2315229e' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231a32aa'/%3E%3Cstop offset='1' stop-color='%231a32aa' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23111491'/%3E%3Cstop offset='1' stop-color='%23111491' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231a32aa'/%3E%3Cstop offset='1' stop-color='%231a32aa' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231a32aa'/%3E%3Cstop offset='1' stop-color='%231a32aa' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
@@ -181,7 +181,7 @@ main {
 }
 
 .game-container div.board-wrapper .token-wrapper::before {
-  content: '+';
+  content: "+";
   color: rgba(41, 128, 185, 0.35);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -200,7 +200,7 @@ main {
 
 .game-container div.board-wrapper .player-1-cell.token-wrapper::before,
 .game-container div.board-wrapper .player-2-cell.token-wrapper::before {
-  content: '';
+  content: "";
 }
 
 .game-container div.board-wrapper .token-wrapper:nth-child(even) {
@@ -279,7 +279,7 @@ main {
   padding: 40px 0;
   width: 10vw;
   border-radius: 50px;
-  font-family: 'Sniglet-ExtraBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Sniglet-ExtraBold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: #111491;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231317a6'/%3E%3Cstop offset='1' stop-color='%231317a6' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230f127e'/%3E%3Cstop offset='1' stop-color='%230f127e' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23121492'/%3E%3Cstop offset='1' stop-color='%23121492' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23111491'/%3E%3Cstop offset='1' stop-color='%23111491' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23161aba'/%3E%3Cstop offset='1' stop-color='%23161aba' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230d0f6b'/%3E%3Cstop offset='1' stop-color='%230d0f6b' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
   background-attachment: fixed;
@@ -334,12 +334,12 @@ main {
 }
 
 .start-screen div.game-title .row span {
-  font-family: 'Retro', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Retro", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 900;
   padding: 4px;
   font-size: 5.5rem;
   color: #ffd033;
-  text-shadow: 0 1px #2a1c52, -1px 0 #3b299b, -1px 2px #2a1c52, -2px 1px #3b299b, -2px 3px #2a1c52, -3px 2px #3b299b, -3px 4px #2a1c52, -4px 3px #3b299b, -4px 5px #2a1c52, -5px 4px #3b299b, -5px 6px #2a1c52, -6px 5px #3b299b, -6px 7px #2a1c52, -7px 6px #3b299b, -7px 8px #2a1c52, -8px 7px #3b299b;
+  text-shadow: 0 1px #2a1c52, -1px 0 #3b299b, -1px 2px #2a1c52, -2px 1px #3b299b, -2px 3px #2a1c52, -3px 2px #3b299b, -3px 4px #2a1c52, -4px 3px #3b299b, -4px 5px #2a1c52, -5px 4px #3b299b, -5px 6px #2a1c52, -6px 5px #3b299b, -6px 7px #2a1c52, -7px 6px #3b299b, -7px 8px #2a1c52, -8px 7px #3b299b;
 }
 
 .start-screen div.game-title .row-1 span:nth-child(even),
@@ -372,7 +372,7 @@ main {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   width: 18vw;
-  font-family: 'Sniglet-ExtraBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Sniglet-ExtraBold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .buttons-container .new-game:hover {

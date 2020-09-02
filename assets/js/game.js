@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import Player from './player.js';
 import GameBoard from './board.js';
 
