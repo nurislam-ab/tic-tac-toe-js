@@ -1,5 +1,5 @@
-import Player from './player';
-import GameBoard from './board';
+import Player from './player.js';
+import GameBoard from './board.js';
 
 const GameLogic = (() => {
   let currentPlayer;
@@ -109,13 +109,11 @@ const GameLogic = (() => {
     GameBoard.resetMovesArray();
     winner = null;
     currentPlayer = player1;
-    GameBoard.toggleStartElements();
     let firstString = `Hello ${currentPlayer.name}, this is your turn.<br>`;
     firstString += '<span>Please, click on the cell you want to play.</span>';
     GameBoard.setMessage(firstString, 'information');
     GameBoard.displayBoard();
     setEventListeners();
-    GameBoard.displayPlayers(player1, player2);
   };
 
   return {

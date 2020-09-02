@@ -1,6 +1,9 @@
-import GameLogic from './game';
+import GameLogic from './game.js';
+
+console.log('main.js');
 
 window.newGame = () => {
+  console.log('newGame')
   GameLogic.start();
 };
 
