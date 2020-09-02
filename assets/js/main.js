@@ -3,5 +3,8 @@ import GameLogic from './game.js';
 
 window.newGame = () => {
   GameLogic.start();
-  GameLogic.toggleStartElements();
+};
+
+window.reset = () => {
+  GameLogic.resetGame();
 };
