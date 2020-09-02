@@ -1,24 +1,19 @@
 const GameBoard = (() => {
-  
   let movesArray = ['', '', '', '', '', '', '', '', ''];
   const message = document.querySelector('#instructions');
 
-  const beginTurn = (currentPlayer) => {
-    message.innerHTML = `Hello ${currentPlayer.name}, this is your turn.<br>`;
-    message.innerHTML += '<span>Please, click on the cell you want to play.</span>';
-    document.getElementById('instructions').classList.toggle('information');
-    document.getElementById('instructions').classList.toggle('information');
+  const setMessage = (stringMessage, classMessage) => {
+    message.innerHTML = stringMessage;
+    message.classList.toggle(classMessage);
   };
 
-  const getWinnerMessage = (currentPlayer) => {
-    message.innerHTML = `We have a winner! Congratulations ${currentPlayer.name}.`;
-    document.getElementById('instructions').classList.toggle('winner');
-  }
+  const resetMovesArray = () => { movesArray = ['', '', '', '', '', '', '', '', '']; };
 
-  const getTieMessage = () => {
-    message.innerHTML = 'We have a tie! Start a new game.';
-    document.getElementById('instructions').classList.toggle('information');
-  }
+  const updateMovesArray = (index, value) => {
+    movesArray[index] = value;
+  };
+
+  const getMovesArray = () => movesArray;
 
   const disableCells = () => {
     for (let i = 0; i <= 8; i += 1) {
@@ -44,12 +39,7 @@ const GameBoard = (() => {
     if (playerSymbol != null) {
       alert(`Cool! ${playerSymbol}! Your token will be ${playerSymbol}`);
     }
-
     return playerSymbol;
-
-
-    // const player = Player(playerName, playerSymbol);
-    // return player;
   };
 
   const getPlayerName = () => {
@@ -63,26 +53,16 @@ const GameBoard = (() => {
     }
 
     return playerName;
-  }
-
-  const playerInput = (i) => {
-    const currentCell = document.getElementById(`${i}`);
-    if (currentCell.innerHTML === '') {
-      currentCell.innerHTML = currentPlayer.token;
-      currentCell.classList.toggle('selected-cell');
-      togglePlayerClass(player1, currentCell);
-      movesArray[i] = currentPlayer.token;
-      evaluateWinner();
-    } else {
-      alert('This option has been taken. Please select an empty option.');
-    }
   };
 
   const toggleStartElements = () => {
     const startScreen = document.getElementById('start-screen');
     const newGameBtn = document.getElementById('new-game-btn');
+    const resetGameBtn = document.getElementById('reset-btn');
+    resetGameBtn.classList.toggle('hidden');
     startScreen.className += ' float-game-title';
     newGameBtn.className += ' float-new-game-btn';
+    resetGameBtn.className += ' float-new-game-btn';
   };
 
 
@@ -98,7 +78,6 @@ const GameBoard = (() => {
       cellWrapper.id = `${i}`;
       cellWrapper.classList.toggle('token-wrapper');
       cellWrapper.setAttribute('data-text', '+');
-      cellWrapper.onclick = () => { GameLogic.playerInput(i); };
       container.append(cellWrapper);
     }
     mainElement.append(container);
@@ -148,8 +127,15 @@ const GameBoard = (() => {
     deleteBoard,
     displayPlayers,
     deletePlayers,
-    getWinnerMessage,
-    getTieMessage
+    setMessage,
+    getPlayerSymbol,
+    getPlayerName,
+    updateMovesArray,
+    getMovesArray,
+    disableCells,
+    togglePlayerClass,
+    toggleStartElements,
+    resetMovesArray,
   };
 })();
 
