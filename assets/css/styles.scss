@@ -100,7 +100,7 @@ main {
     flex-wrap: wrap;
     text-align: center;
     flex-grow: 1;
-    order: 3;
+    order: 2;
     padding: 25px;
     margin: 0 25px;
     width: 50%;
@@ -226,7 +226,6 @@ main {
     margin: 25px;
     padding: 40px 0;
     width: 10vw;
-    // border: 1px solid #2A1C52;
     border-radius: 50px;
     font-family: 'Sniglet-ExtraBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #111491;
@@ -254,11 +253,9 @@ main {
 
 .start-screen {
   display: flex;
-  // display: none;
 
   div.game-title {
     display: flex;
-    // align-content: center;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
@@ -273,7 +270,6 @@ main {
         font-weight: 900;
         padding: 4px;
         font-size: 5.5rem;
-        // background-color: #fff;
         color: #ffd033;
         text-shadow:
           0 1px #2a1c52,
@@ -324,10 +320,17 @@ main {
     cursor: pointer;
     margin-top: 35px;
     transition: all 0.5s ease-in-out;
+    width: 18vw;
+    font-family: 'Sniglet-ExtraBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
   .new-game:hover {
-    background-color: #3b299b;
+    background-color: #3b299b !important;
+  }
+
+  button#reset-btn {
+    top: 50px;
+    background-color: #fcaa15;
   }
 }
 
