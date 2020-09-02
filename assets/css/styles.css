@@ -30,21 +30,25 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: space-evenly;
-      align-content: space-evenly;
+  align-content: space-evenly;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   overflow: hidden;
 }
 
 .messages-container {
   margin: 25px 0;
-  font-family: "Sniglet-ExtraBold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family:
+    "Sniglet-ExtraBold",
+    "Franklin Gothic Medium",
+    "Arial Narrow",
+    Arial,
+    sans-serif;
 }
 
 .messages-container h3 {
@@ -61,18 +65,19 @@ main {
 
 .messages-container .information {
   -webkit-animation: border-animation 5s;
-          animation: border-animation 5s;
+  animation: border-animation 5s;
 }
 
 .messages-container .winner {
   -webkit-animation: border-winning 10s;
-          animation: border-winning 10s;
+  animation: border-winning 10s;
 }
 
 @-webkit-keyframes border-animation {
   0% {
     border: solid red 1px;
   }
+
   100% {
     border: solid white 1px;
   }
@@ -82,6 +87,7 @@ main {
   0% {
     border: solid red 1px;
   }
+
   100% {
     border: solid white 1px;
   }
@@ -91,6 +97,7 @@ main {
   0% {
     border: solid green 3px;
   }
+
   100% {
     border: solid white 1px;
   }
@@ -100,6 +107,7 @@ main {
   0% {
     border: solid green 3px;
   }
+
   100% {
     border: solid white 1px;
   }
@@ -115,18 +123,18 @@ main {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0 25px;
   margin-bottom: 80px;
 }
@@ -138,17 +146,17 @@ main {
   border-radius: 35px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   text-align: center;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  -ms-flex-order: 2;
+  order: 2;
   padding: 25px;
   margin: 0 25px;
   width: 50%;
@@ -156,21 +164,26 @@ main {
 
 .game-container div.board-wrapper .token-wrapper {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 calc((100% / 3) - 10px);
-          flex: 1 0 calc((100% / 3) - 10px);
+  -ms-flex: 1 0 calc((100% / 3) - 10px);
+  flex: 1 0 calc((100% / 3) - 10px);
   height: 22.5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: "RammettoOne-Regular", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family:
+    "RammettoOne-Regular",
+    "Franklin Gothic Medium",
+    "Arial Narrow",
+    Arial,
+    sans-serif;
   font-size: 5rem;
   background-color: #111491;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2315229e'/%3E%3Cstop offset='1' stop-color='%2315229e' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2315229e'/%3E%3Cstop offset='1' stop-color='%2315229e' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231a32aa'/%3E%3Cstop offset='1' stop-color='%231a32aa' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23111491'/%3E%3Cstop offset='1' stop-color='%23111491' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231a32aa'/%3E%3Cstop offset='1' stop-color='%231a32aa' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231a32aa'/%3E%3Cstop offset='1' stop-color='%231a32aa' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
@@ -195,7 +208,7 @@ main {
 
 .game-container div.board-wrapper .token-wrapper:hover::before {
   -webkit-transform: scale(1.8);
-          transform: scale(1.8);
+  transform: scale(1.8);
 }
 
 .game-container div.board-wrapper .player-1-cell.token-wrapper::before,
@@ -246,40 +259,45 @@ main {
 
 .game-container #player-1 {
   -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  -ms-flex-order: 1;
+  order: 1;
 }
 
 .game-container #player-2 {
   -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
+  -ms-flex-order: 3;
+  order: 3;
 }
 
 .game-container .player-card {
   -webkit-box-flex: 0.5;
-      -ms-flex-positive: 0.5;
-          flex-grow: 0.5;
+  -ms-flex-positive: 0.5;
+  flex-grow: 0.5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   margin: 25px;
   padding: 40px 0;
   width: 10vw;
   border-radius: 50px;
-  font-family: "Sniglet-ExtraBold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family:
+    "Sniglet-ExtraBold",
+    "Franklin Gothic Medium",
+    "Arial Narrow",
+    Arial,
+    sans-serif;
   background-color: #111491;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231317a6'/%3E%3Cstop offset='1' stop-color='%231317a6' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230f127e'/%3E%3Cstop offset='1' stop-color='%230f127e' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23121492'/%3E%3Cstop offset='1' stop-color='%23121492' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23111491'/%3E%3Cstop offset='1' stop-color='%23111491' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23161aba'/%3E%3Cstop offset='1' stop-color='%23161aba' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230d0f6b'/%3E%3Cstop offset='1' stop-color='%230d0f6b' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
   background-attachment: fixed;
@@ -313,33 +331,54 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%;
 }
 
 .start-screen div.game-title .row {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .start-screen div.game-title .row span {
-  font-family: "Retro", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family:
+    "Retro",
+    "Franklin Gothic Medium",
+    "Arial Narrow",
+    Arial,
+    sans-serif;
   font-weight: 900;
   padding: 4px;
   font-size: 5.5rem;
   color: #ffd033;
-  text-shadow: 0 1px #2a1c52, -1px 0 #3b299b, -1px 2px #2a1c52, -2px 1px #3b299b, -2px 3px #2a1c52, -3px 2px #3b299b, -3px 4px #2a1c52, -4px 3px #3b299b, -4px 5px #2a1c52, -5px 4px #3b299b, -5px 6px #2a1c52, -6px 5px #3b299b, -6px 7px #2a1c52, -7px 6px #3b299b, -7px 8px #2a1c52, -8px 7px #3b299b;
+  text-shadow:
+    0 1px #2a1c52,
+    -1px 0 #3b299b,
+    -1px 2px #2a1c52,
+    -2px 1px #3b299b,
+    -2px 3px #2a1c52,
+    -3px 2px #3b299b,
+    -3px 4px #2a1c52,
+    -4px 3px #3b299b,
+    -4px 5px #2a1c52,
+    -5px 4px #3b299b,
+    -5px 6px #2a1c52,
+    -6px 5px #3b299b,
+    -6px 7px #2a1c52,
+    -7px 6px #3b299b,
+    -7px 8px #2a1c52,
+    -8px 7px #3b299b;
 }
 
 .start-screen div.game-title .row-1 span:nth-child(even),
@@ -356,8 +395,8 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .buttons-container .new-game {
@@ -372,7 +411,12 @@ main {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   width: 18vw;
-  font-family: "Sniglet-ExtraBold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family:
+    "Sniglet-ExtraBold",
+    "Franklin Gothic Medium",
+    "Arial Narrow",
+    Arial,
+    sans-serif;
 }
 
 .buttons-container .new-game:hover {
@@ -399,4 +443,3 @@ main {
   right: 10px;
   top: -20px;
 }
-/*# sourceMappingURL=styles.css.map */
