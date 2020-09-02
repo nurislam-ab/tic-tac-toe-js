@@ -1,5 +1,4 @@
-/* eslint-disable import/extensions */
-import GameLogic from './game.js';
+import GameLogic from './game';
 
 window.newGame = () => {
   GameLogic.start();

@@ -1,7 +1,5 @@
-/* eslint-disable import/no-cycle */
-/* eslint-disable import/extensions */
-import Player from './player.js';
-import GameBoard from './board.js';
+import Player from './player';
+import GameBoard from './board';
 
 const GameLogic = (() => {
   let currentPlayer;
