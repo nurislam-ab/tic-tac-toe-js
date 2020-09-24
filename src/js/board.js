@@ -1,8 +1,8 @@
 const GameBoard = (() => {
   let movesArray = ['', '', '', '', '', '', '', '', ''];
-  const message = document.querySelector('#instructions');
-
+  
   const setMessage = (stringMessage, classMessage) => {
+    const message = document.querySelector('#instructions');
     message.innerHTML = stringMessage;
     message.classList.toggle(classMessage);
   };
