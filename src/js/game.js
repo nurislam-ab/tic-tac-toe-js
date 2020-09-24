@@ -120,6 +120,9 @@ const GameLogic = (() => {
   return {
     start,
     resetGame,
+    updateTokens,
+    endGame,
+    switchPlayer,
   };
 })();
 
