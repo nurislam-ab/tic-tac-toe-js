@@ -1,6 +1,6 @@
 const GameBoard = (() => {
   let movesArray = ['', '', '', '', '', '', '', '', ''];
-  
+
   const setMessage = (stringMessage, classMessage) => {
     const message = document.querySelector('#instructions');
     message.innerHTML = stringMessage;

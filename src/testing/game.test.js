@@ -1,5 +1,4 @@
 import GameLogic from '../js/game';
-import GameBoard from '../js/board';
 import Player from '../js/player';
 
 const player1 = Player('Player 1', 'x');
