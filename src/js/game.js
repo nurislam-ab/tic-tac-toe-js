@@ -35,9 +35,9 @@ const GameLogic = (() => {
     return tokensArr;
   };
 
-  const endGame = (boardArray, winner) => {
+  const endGame = (boardArray, winner, name) => {
     if (winner) {
-      GameBoard.setMessage(`We have a winner! Congratulations ${currentPlayer.name}.`, 'winner');
+      GameBoard.setMessage(`We have a winner! Congratulations ${name}.`, 'winner');
       GameBoard.disableCells();
       return true;
     } if (boardArray.every(el => el !== '')) {
@@ -120,6 +120,11 @@ const GameLogic = (() => {
   return {
     start,
     resetGame,
+    updateTokens,
+    endGame,
+    switchPlayer,
+    evaluateWinner,
+    playerInput,
   };
 })();
 

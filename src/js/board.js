@@ -1,8 +1,8 @@
 const GameBoard = (() => {
   let movesArray = ['', '', '', '', '', '', '', '', ''];
-  const message = document.querySelector('#instructions');
 
   const setMessage = (stringMessage, classMessage) => {
+    const message = document.querySelector('#instructions');
     message.innerHTML = stringMessage;
     message.classList.toggle(classMessage);
   };
@@ -65,13 +65,11 @@ const GameBoard = (() => {
     resetGameBtn.className += ' float-new-game-btn';
   };
 
-
   const displayBoard = () => {
     const mainElement = document.getElementById('game-board');
     const container = document.createElement('div');
     container.id = 'player-board';
     container.classList.toggle('board-wrapper');
-
 
     for (let i = 0; i <= 8; i += 1) {
       const cellWrapper = document.createElement('div');
@@ -99,7 +97,6 @@ const GameBoard = (() => {
     player1Card.innerHTML = '<div>Player 1</div>';
     player1Card.innerHTML += `<h3>${player1.name}</h3>`;
     player1Card.innerHTML += `<span>${player1.token}</span>`;
-
 
     const player2Card = document.createElement('div');
     player2Card.id = 'player-2';

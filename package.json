@@ -1,0 +1,54 @@
+{
+  "name": "tic-tac-toe-js",
+  "version": "1.0.0",
+  "description": "Building a Tic Tac Toe game using JavaScript to build the entire game manipulating DOM elements using JS modules.",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "jest": "^26.4.2",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.5",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-csstree-validator": "^1.8.0",
+    "stylelint-scss": "^3.17.2",
+    "css-loader": "^3.6.0",
+    "file-loader": "^6.1.0",
+    "node-loader": "^1.0.1",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^9.0.3",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "watch": "webpack --watch",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nurislam-ab/tic-tac-toe-js.git"
+  },
+  "keywords": [
+    "jest",
+    "testing",
+    "tic-tac-toe"
+  ],
+  "author": "Nurislam Ab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nurislam-ab/tic-tac-toe-js/issues"
+  },
+  "homepage": "https://github.com/nurislam-ab/tic-tac-toe-js#readme"
+}
